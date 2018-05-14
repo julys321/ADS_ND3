@@ -1,0 +1,4 @@
+﻿  main.cpp
+c:\users\andrius\desktop\paskaitos\algoritmai\ads_nd3\ads_nd3\main.cpp(25): warning C4018: '<': signed/unsigned mismatch
+c:\users\andrius\desktop\paskaitos\algoritmai\ads_nd3\ads_nd3\main.cpp(56): warning C4018: '<': signed/unsigned mismatch
+  ADS_ND3.vcxproj -> C:\Users\ANDRIUS\Desktop\Paskaitos\Algoritmai\ADS_ND3\Debug\ADS_ND3.exe
