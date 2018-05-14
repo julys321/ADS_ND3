@@ -1,3 +1,0 @@
-.vs/
-Debug/
-ADS_ND3/Debug/
