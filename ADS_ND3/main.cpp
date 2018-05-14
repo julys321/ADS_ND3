@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <fstream>
 
 using namespace std;
 
@@ -22,11 +23,17 @@ void QuickSort(vector <int> &vect, int begin, int end) {
 	}
 	Swap(vect, i, end);
 
+	/*for (int a = 0; a < vect.size(); a++) {
+		cout << vect[a] << " ";
+	}
+	cout << endl;*/
+
+
 	if (i - 1 > begin) { //for cheking
 		QuickSort(vect, begin, i - 1);
 	}
-	if (i < end - 1) {
-		QuickSort(vect, i - 1, end);
+	if (i < end - 1) { //pakeista is -1 i -2
+		QuickSort(vect, i + 1, end); //pakeista is -1 i +1
 	}
 }
 
@@ -34,12 +41,15 @@ void QuickSort(vector <int> &vect, int begin, int end) {
 int main()
 {
 	vector <int> vect;
-	int n, number;
-	cin >> n;
-	for (int a = 0; a < n; a++) {
-		cin >> number;
+	int number;
+	ifstream input;
+	input.open("input.txt");
+
+	while (input >> number) {
 		vect.push_back(number);
 	}
+
+	input.close();
 
 	//QuickSort
 
