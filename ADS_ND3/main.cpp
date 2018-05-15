@@ -43,7 +43,7 @@ int main()
 	vector <int> vect;
 	int number;
 	ifstream input;
-	input.open("input100000.txt");
+	input.open("input10.txt");
 
 	while (input >> number) {
 		vect.push_back(number);
