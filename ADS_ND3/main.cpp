@@ -61,6 +61,6 @@ int main()
 		cout << vect[a] << " ";
 	}
 
-	system("pause");
+	//system("pause");
 	return 0;
 }
