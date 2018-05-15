@@ -43,7 +43,7 @@ int main()
 	vector <int> vect;
 	int number;
 	ifstream input;
-	input.open("input.txt");
+	input.open("input100000.txt");
 
 	while (input >> number) {
 		vect.push_back(number);
@@ -61,6 +61,6 @@ int main()
 		cout << vect[a] << " ";
 	}
 
-	//system("pause");
+	system("pause");
 	return 0;
 }

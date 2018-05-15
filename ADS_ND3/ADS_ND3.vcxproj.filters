@@ -20,7 +20,19 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="input.txt">
+    <Text Include="input10.txt">
+      <Filter>Source Files</Filter>
+    </Text>
+    <Text Include="input100.txt">
+      <Filter>Source Files</Filter>
+    </Text>
+    <Text Include="input1000.txt">
+      <Filter>Source Files</Filter>
+    </Text>
+    <Text Include="input10000.txt">
+      <Filter>Source Files</Filter>
+    </Text>
+    <Text Include="input100000.txt">
       <Filter>Source Files</Filter>
     </Text>
   </ItemGroup>

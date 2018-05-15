@@ -118,7 +118,11 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="input.txt" />
+    <Text Include="input10.txt" />
+    <Text Include="input100.txt" />
+    <Text Include="input1000.txt" />
+    <Text Include="input10000.txt" />
+    <Text Include="input100000.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
