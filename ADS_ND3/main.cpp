@@ -17,7 +17,7 @@ void QuickSort(vector <int> &vect, int begin, int end) {
 
 	for (int a = begin; a < end; a++) {
 		if (vect[a] < vect[end]) {// jeigu yra mazesnis, tada swapinam
-			Swap(vect, a, i); // su keiciame vietomis
+			Swap(vect, a, i); // su keiciame vietomis ok
 			i++;
 		}
 	}
