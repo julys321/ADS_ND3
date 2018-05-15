@@ -24,7 +24,7 @@ void QuickSort(vector <int> &vect, int begin, int end) {
 	Swap(vect, i, end);
 
 	/*for (int a = 0; a < vect.size(); a++) {
-		cout << vect[a] << " ";
+	cout << vect[a] << " ";
 	}
 	cout << endl;*/
 
