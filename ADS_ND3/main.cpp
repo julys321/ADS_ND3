@@ -59,7 +59,7 @@ int main() {
 	output.open("output.txt");
 
 	for (int a = 0; a < outputData.size(); a++) {
-		output << outputData[a];
+		output << outputData[a] << " ";
 	}
 
 	output.close();
