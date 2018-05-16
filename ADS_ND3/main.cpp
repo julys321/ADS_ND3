@@ -3,60 +3,13 @@
 #include <vector>
 #include <algorithm>
 #include <chrono>
-//#include <ctime>
 
 using namespace std;
 
-void Reverse(vector <int> &vect) {
-	reverse(vect.begin(), vect.end());
-}
-
-
-void Swap(vector <int> &vect, int i, int j) {
-	int temp = vect[j];
-	vect[j] = vect[i];
-	vect[i] = temp;
-}
-
-void QuickSort(vector <int> &vect, int begin, int end) {
-
-	int i = begin;
-
-
-	for (int a = begin; a < end; a++) {
-		if (vect[a] < vect[end]) {// jeigu yra mazesnis, tada swapinam
-			Swap(vect, a, i); // su keiciame vietomis ok
-			i++;
-		}
-	}
-	Swap(vect, i, end);
-
-	/*for (int a = 0; a < vect.size(); a++) { //test
-	cout << vect[a] << " ";
-	}
-	cout << endl;*/
-
-	if (i - 1 > begin) { //for cheking
-		QuickSort(vect, begin, i - 1);
-	}
-	if (i < end - 1) {
-		QuickSort(vect, i + 1, end);
-	}
-}
-
-
-bool isCorrect(vector <int> inputData, vector <int> outputData, int type) { //tiesiog checkinimas
-	sort(inputData.begin(), inputData.end());
-	if (type == 1) {
-		Reverse(inputData);
-	}
-
-	if (inputData == outputData) {
-		return true;
-	}
-	else return false;
-}
-
+void Reverse(vector <int> &vect);
+void Swap(vector <int> &vect, int i, int j);
+void QuickSort(vector <int> &vect, int begin, int end);
+bool isCorrect(vector <int> inputData, vector <int> outputData, int type);
 
 int main() {
 	clock_t time;
@@ -65,7 +18,7 @@ int main() {
 	vector <int> inputData, outputData;
 
 	ifstream input;
-	input.open("input.txt");
+	input.open("input`.txt");
 
 	while (input >> number) {
 		inputData.push_back(number);
@@ -124,4 +77,54 @@ int main() {
 
 	system("pause");
 	return 0;
+}
+
+void Reverse(vector <int> &vect) {
+	reverse(vect.begin(), vect.end());
+}
+
+
+void Swap(vector <int> &vect, int i, int j) {
+	int temp = vect[j];
+	vect[j] = vect[i];
+	vect[i] = temp;
+}
+
+void QuickSort(vector <int> &vect, int begin, int end) {
+
+	int i = begin;
+
+
+	for (int a = begin; a < end; a++) {
+		if (vect[a] < vect[end]) {// jeigu yra mazesnis, tada swapinam
+			Swap(vect, a, i); // su keiciame vietomis ok
+			i++;
+		}
+	}
+	Swap(vect, i, end);
+
+	/*for (int a = 0; a < vect.size(); a++) { //test
+	cout << vect[a] << " ";
+	}
+	cout << endl;*/
+
+	if (i - 1 > begin) { //for cheking
+		QuickSort(vect, begin, i - 1);
+	}
+	if (i < end - 1) {
+		QuickSort(vect, i + 1, end);
+	}
+}
+
+
+bool isCorrect(vector <int> inputData, vector <int> outputData, int type) { //tiesiog checkinimas
+	sort(inputData.begin(), inputData.end());
+	if (type == 1) {
+		Reverse(inputData);
+	}
+
+	if (inputData == outputData) {
+		return true;
+	}
+	else return false;
 }
