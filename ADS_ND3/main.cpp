@@ -18,7 +18,7 @@ int main() {
 	vector <int> inputData, outputData;
 
 	ifstream input;
-	input.open("input`.txt");
+	input.open("input.txt");
 
 	while (input >> number) {
 		inputData.push_back(number);
